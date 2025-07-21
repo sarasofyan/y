@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>❤️❤️</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="crush.css"/>
+        <link href="https://fonts.googlepis.com/css?family=Quicksand&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <audio id="bgmusic" autoplay loop>
+            <source src="https://files.catbox.moe/esbhhu.mp3">
+        </audio>
+
+        <button class="music-btn" onclick="document.getElementById('bgmusic').play()"></button>
+
+        <div class="container">
+            <h1>هلوو ,حاولت تضغط لا ؟</h1>
+            <p>دايما انت اللي تسوي لي مواقع ففكرت انه ليش م اجرب اعمل لك موقع عشان اوضح لك قد اش انت مهم عندي</p>
+            <p>الموقع بسيط (بسيط والا سبونج بوب هه امزح) بس انه صنع بكل حب❤️❤️</p>
+            <button id="showmsg" onclick="showmessage()">اضغط هنا</button>
+            
+            <p id="hiddenmsg" style="display: none;">انا محظوظة لان الله اختارك انت بالذات تكون الجزء المهم والاهم في حياتي, الجزء المريح, الجزء اللي ادعي الله دايما انه ما افقده❤️❤️</p>
+        
+        </div>
+        <script>
+            function showmessage() {
+                document.getElementById("hiddenmsg").style.display = 'block';
+                document.getElementById('showmsg').style.display = 'none'
+            }
+        </script>
+    </body>
+</html>

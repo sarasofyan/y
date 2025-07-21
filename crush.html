@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>❤️❤️</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="crush.css"/>
+        <link href="https://fonts.googlepis.com/css?family=Quicksand&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>لو انت محور الكون اضغط ايوه</h1>
+        <div class="buttons-container">
+            <button id="yesBtn">ايوه</button>
+            <button id="noBtn">لا</button>
+        </div>
+        <script>
+            const noBtn = document.getElementById('noBtn');
+            const container = document.querySelector('.buttons-container');
+
+            noBtn.addEventListener('mouseenter', () => {
+                const containerRect = container.getBoundingClientRect();
+                const btnRect = noBtn.getBoundingClientRect();
+
+                const maxX = containerRect.width - btnRect.width;
+                const maxY = containerRect.height -btnRect.height;
+
+                const randomX = Math.floor(Math.random() * maxX);
+                const randomY = Math.floor(Math.random() * maxY);
+
+                noBtn.style.position = 'absolute';
+                noBtn.style.left = randomX + 'px';
+                noBtn.style.top = randomY + 'px';
+            });
+
+            document.getElementById('yesBtn').addEventListener('click', () => {
+                window.location.href = 'crush2.html';
+            })
+        </script>
+    </body>
+</html>

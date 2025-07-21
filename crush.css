@@ -1,0 +1,73 @@
+body{
+    background-color: #fffaf6;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1 {
+    color: #c97b84;
+    margin: 40px 0;
+    font-size: 0 auto;
+}
+.buttons-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+button {
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f5c6c6;
+    color: white;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    po
+}
+#yesBtn {
+    left: 0;
+}
+#noBtn {
+    right: 0;
+    transition: left 0.2s, top 0.2s;
+}
+button:hover {
+    background-color: #e5a5a5;
+}
+.container {
+    background-color: #fff2ec;
+    border: 1px solid #f5d7c4;
+    padding: 40PX;
+    border-radius: 20PX;
+    box-shadow: 0 10PX 25PX rgba(0, 0, 0, 0.05);
+    max-width: 400PX;
+    margin: 50PX auto;
+}
+P {
+    color: #555;
+    font-size: 18PX;
+    margin: 10PX 0;
+}
+.message{
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+}
+.music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffe8e8;
+    color: #d77474;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
